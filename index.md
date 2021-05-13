@@ -1,37 +1,49 @@
-## Welcome to GitHub Pages
+# SpearPy
+Program na hľadanie ostrých Peak-ov v silne zašumených dátach.
+Ako vyzerá kompletná stránka front-endu je možné nájsť na: 
+[Dash.pdf](https://github.com/SamuelAmrich/SpearPy/files/6453927/Dash.pdf)
 
-You can use the [editor on GitHub](https://github.com/SamuelAmrich/SpearPy/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Prvá časť je linka kde je: 
+  - Výber dataset-u z dropdown menu (Funguje)
+  - Ručné navolenie cesty k dátam (Nefunguje, všetky dáta sa dávajú do priečinka data v programovom priečinku)
+  - Voľba rozlišovacej presnosti grafov (Funguje)
+  - Tlačidlo na spustenie programu (Irelevantné, program sa spúšťa automaticky)
+  -  Voľba uloźených nastavení (zatiaľ nefunguje)
+  -  Cesta k uloženým dátam (zatiaľ nefunguje)
+![image](https://user-images.githubusercontent.com/55489761/118136746-bb4a2700-b404-11eb-858d-12efeb69bc51.png)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+Druhá časť je graf zobrazujúci originálne dáta:
+  - Graf je interaktívny, dá sa posúvať, približovať a pod.
+![image](https://user-images.githubusercontent.com/55489761/118136952-f0ef1000-b404-11eb-8626-b4b0030037ad.png)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Tretia časť je linka pre FFT filter:
+  - Máme na výber 2 vstupy. Pričom na grafe sa nám zobrazuje frekvencie ktoré sa v dátach vyskytujú, a zároveň krivka ktorá určuje filter (Gauss krivka)
+  - - "a" určuje miesto posunutia maxima filtrovacej krivky.
+  - - "σ" určuje šírku filtra
+![image](https://user-images.githubusercontent.com/55489761/118137942-0fa1d680-b406-11eb-9443-c691f2bfbe77.png)
 
-```markdown
-Syntax highlighted code block
+Štvrtá časť je linka pre vyhladzovanie dát pomocou Savitsky-Golay filter:
+  - Máme na výber 2 vstupy, pričom na grafe je vidieť výsledná krivka po prechode FFt filtrom aj S-G filtrom.
+  - -"win" je množstvo dát v okolí každého bodu ktoré má filter brať do úvahy
+  - -"pol" je úroveň polynómu ktorým filter vyhladzuje dáta
+![image](https://user-images.githubusercontent.com/55489761/118138570-c7cf7f00-b406-11eb-94da-bb80c8ccbbbd.png)
 
-# Header 1
-## Header 2
-### Header 3
+Piata časť je samotný vyhľadávač:
+  - Máme na výber 6 vstupov, pričom na grafe je vidieť výsledná krivka aj s označenými bodmi ktoré sa našli.
+  - -"Tr+" označuje o koľko sa musí hodnota maximá líši´t od predchádzajúceho bodu
+  - -"Tr-" obdobne ako "Tr+" ale pre záporné hodnoty
+  - -"dis" Hovorí aká je minimálkna vzdialenosť medzi dvoma po sebe idúcimi vrcholmi
+  - -"pro" Hovorí ako veľmi výrazný mui byť vrchol zo štatistického pohľadu
+  - -"wid" Hovorí aká je minimálna šírka vrcholu
+  - -"hei" Hovorí aká je minimálna výška vrcholu
+![image](https://user-images.githubusercontent.com/55489761/118139967-3234ef00-b408-11eb-8746-00e03635dc3c.png)
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/SamuelAmrich/SpearPy/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Šiesta časť je ukladacia:
+  - Môžeme si navoliť do akých formátov sa uložia výsledky a je tam tlačidlo ktoré dáta ukladá (v súčasnosti sa uloźia ysledky po každej zmene)
+  - -".TXT" Uloží polohy vrcholov ako textový súbor (zatial jedina moznost)
+  - -".CSV" Uloží polohy vrcholov ako csv súbor (este nedotiahnute)
+  - -".PNG" Ulozí výsledný graf ako png obrázok
+  - -".PDF" Uloží výsledený graf ako pdf súbor
+  - -"QLS" Uloží nastavenie všetkých parametrov ako vlastný typ súbory a ktorý si potom vie naloadovať pri ďalšom spustení (ešte vyžaduje dokočiť) 
+![image](https://user-images.githubusercontent.com/55489761/118141802-0f0b3f00-b40a-11eb-91e9-d5f12a83cc8a.png)
