@@ -29,3 +29,12 @@ Tretia časť je linka pre FFT filter:
   - -"pol" je úroveň polynómu ktorým filter vyhladzuje dáta
 ![image](https://user-images.githubusercontent.com/55489761/118138570-c7cf7f00-b406-11eb-94da-bb80c8ccbbbd.png)
 
+Piata časť je samotný vyhľadávač:
+  - Máme na výber 6 vstupov, pričom na grafe je vidieť výsledná krivka aj s označenými bodmi ktoré sa našli.
+  - -"Tr+" označuje o koľko sa musí hodnota maximá líši´t od predchádzajúceho bodu
+  - -"Tr-" obdobne ako "Tr+" ale pre záporné hodnoty
+  - -"dis" Hovorí aká je minimálkna vzdialenosť medzi dvoma po sebe idúcimi vrcholmi
+  - -"pro" Hovorí ako veľmi výrazný mui byť vrchol zo štatistického pohľadu
+  - -"wid" Hovorí aká je minimálna šírka vrcholu
+  - -"hei" Hovorí aká je minimálna výška vrcholu
+![image](https://user-images.githubusercontent.com/55489761/118139967-3234ef00-b408-11eb-8746-00e03635dc3c.png)
