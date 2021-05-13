@@ -38,3 +38,11 @@ Piata časť je samotný vyhľadávač:
   - -"wid" Hovorí aká je minimálna šírka vrcholu
   - -"hei" Hovorí aká je minimálna výška vrcholu
 ![image](https://user-images.githubusercontent.com/55489761/118139967-3234ef00-b408-11eb-8746-00e03635dc3c.png)
+
+Šiesta časť je ukladacia:
+  - Môžeme si navoliť do akých formátov sa uložia výsledky a je tam tlačidlo ktoré dáta ukladá (v súčasnosti sa uloźia ysledky po každej zmene)
+  - -".TXT" Uloží polohy vrcholov ako textový súbor (zatial jedina moznost)
+  - -".CSV" Uloží polohy vrcholov ako csv súbor (este nedotiahnute)
+  - -".PNG" Ulozí výsledný graf ako png obrázok
+  - -".PDF" Uloží výsledený graf ako pdf súbor
+  - -"QLS" Uloží nastavenie všetkých parametrov ako vlastný typ súbory a ktorý si potom vie naloadovať pri ďalšom spustení (ešte vyžaduje dokočiť) 
