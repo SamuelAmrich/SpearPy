@@ -46,3 +46,4 @@ Piata časť je samotný vyhľadávač:
   - -".PNG" Ulozí výsledný graf ako png obrázok
   - -".PDF" Uloží výsledený graf ako pdf súbor
   - -"QLS" Uloží nastavenie všetkých parametrov ako vlastný typ súbory a ktorý si potom vie naloadovať pri ďalšom spustení (ešte vyžaduje dokočiť) 
+![image](https://user-images.githubusercontent.com/55489761/118141802-0f0b3f00-b40a-11eb-91e9-d5f12a83cc8a.png)
